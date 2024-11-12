@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="wstyle.css">
+</head>
+<body>
+  <header>
+    <h1>Weather App</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name" autocomplete="off">
+    <div id="suggestions" class="auto-suggest"></div>
+    <button id="currentLocationButton">Use Current Location</button>
+    <div class="unit-selection">
+      <label><input type="radio" name="unit" value="metric" checked> °C</label>
+      <label><input type="radio" name="unit" value="imperial"> °F</label>
+    </div>
+  </header>
+
+  <main>
+    <section id="currentWeather" class="weather-section">
+    </section>
+    <section id="forecast" class="forecast-section">
+    </section>
+  </main>
+
+  <script src="wscript.js"></script>
+</body>
+</html>
